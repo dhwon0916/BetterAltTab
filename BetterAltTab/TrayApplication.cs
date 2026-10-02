@@ -36,7 +36,7 @@ internal sealed class TrayApplication : ApplicationContext
             menu.Items.Add("Troubleshooting…", null, (_, _) => { Cancel(); Diagnostics.ShowWindow(); });
             menu.Items.Add(new ToolStripSeparator());
             menu.Items.Add("Exit", null, (_, _) => ExitThread());
-            tray.Icon = SystemIcons.Application; tray.Text = "BetterAltTab"; tray.ContextMenuStrip = menu; tray.Visible = true;
+            tray.Icon = AppIcon.Value; tray.Text = "BetterAltTab"; tray.ContextMenuStrip = menu; tray.Visible = true;
             tray.DoubleClick += (_, _) => OpenSettings();
             eventMonitor = new WindowEventMonitor(Post, TrackWindow, RemoveWindow, Cancel);
             SystemEvents.DisplaySettingsChanged += DisplaysChanged;

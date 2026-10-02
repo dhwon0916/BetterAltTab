@@ -21,6 +21,7 @@ internal static class Ui
     {
         RefreshTheme();
         form.SuspendLayout();
+        form.Icon = AppIcon.Value;
         form.Font = new Font("Segoe UI", 10);
         form.BackColor = Background; form.ForeColor = Text;
         form.AutoScaleMode = AutoScaleMode.Dpi;
