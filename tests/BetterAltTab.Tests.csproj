@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+  <ItemGroup><Compile Include="../BetterAltTab/Ordering.cs" Link="Ordering.cs"/><Compile Include="../BetterAltTab/CardLayout.cs" Link="CardLayout.cs"/><Compile Include="../BetterAltTab/SwitchSession.cs" Link="SwitchSession.cs"/><Compile Include="../BetterAltTab/LatestOperation.cs" Link="LatestOperation.cs"/></ItemGroup>
+  <ItemGroup><Compile Include="../BetterAltTab/DeferredSet.cs" Link="DeferredSet.cs"/></ItemGroup>
+</Project>
